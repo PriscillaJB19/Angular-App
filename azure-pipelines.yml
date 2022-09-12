@@ -14,11 +14,12 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'Azure-SonarQube'
+    SonarQube: 'SonarQube/Azure-Prueba-Angular'
     scannerMode: 'MSBuild'
-    projectKey: 'Angular-App_Angular-App'
+    projectKey: '_Angular-App_Angular-App'
     projectName: 'Angular-App'
     
 - script: |
